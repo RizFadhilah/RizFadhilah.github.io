@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Praktikum JQuery</title>
+        <script src="jquery-3.5.1.js"></script>
+        <script>
+            $(Document).ready(function(){
+                $("button").click(function(){
+                    $("h2").hide();
+                    $(".subjudul").hide();
+                    $("#paragraf").hide();
+                    $("#paragraf.dua").hide();
+                    $("div p.paragraf").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h2>Ini adalah judul; bab</h2>
+        <h3 class="subjudul">ini adalah subjudul bab</h3>
+        <p id="paragraf">ini adalh paragraf pertama</p>
+        <p id="paragraf" class="dua">ini adlah paragraf kedua</p>
+        <div>
+            <p class="paragraf">
+                ini adlah pargraf ketiga
+            </p>
+        </div>
+        <p>ini paragraf yang akan ditampilkan</p>
+        <button>Klik saya!</button>
+    </body>
+</html>
